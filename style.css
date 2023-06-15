@@ -1,0 +1,127 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+label{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+label::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+     /* left: 1px; */
+    /* top: 1px; */
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+label.active::before{
+    background: #000;
+    left: 21px;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    /* display: grid; */
+
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.header-title{
+    /* background-color: aqua; */
+    height: 100%;
+}
+.header-title h1{
+    color: #002765;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    padding-top: 20px;
+}
+.header-input{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   border-radius: 30px;
+   padding-left: 20px;
+   margin-bottom: 25px;
+   margin-top: 25px ;
+}
+.title{
+   flex: 1;
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 10px;
+}
+.btn-add{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.reminderContainer{
+    display: none;
+    
+}
+.reminderInput{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.title-output{
+    /* background-color: #ccc; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #fff;
+    margin-top: 5px;
+    
+}
+.btn-delete{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.icon-check{
+    position: absolute;
+    margin-left: 20px;
+    color: #ff5945;
+}
+.clock{
+    margin: 100px 41.5%;
+    color: white;
+}
+.clock h1{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
